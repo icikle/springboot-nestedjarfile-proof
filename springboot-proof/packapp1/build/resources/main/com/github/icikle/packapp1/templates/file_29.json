@@ -1,0 +1,16 @@
+{
+  "id": 29,
+  "name": "Resource 29",
+  "description": "",
+  "data": [
+    {"key_1": "value_32448"},
+    {"key_2": "value_589"},
+    {"key_3": "value_1497"},
+    {"key_4": "value_2406"},
+    {"key_5": "value_3314"},
+    {"key_6": "value_4223"},
+    {"key_7": "value_5132"}
+  ],
+  "timestamp": "2026-09-10T20:13:21Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

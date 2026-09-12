@@ -1,0 +1,21 @@
+{
+  "id": 62,
+  "name": "Resource 62",
+  "description": "",
+  "data": [
+    {"key_1": "value_18137"},
+    {"key_2": "value_19046"},
+    {"key_3": "value_19955"},
+    {"key_4": "value_20863"},
+    {"key_5": "value_21772"},
+    {"key_6": "value_22680"},
+    {"key_7": "value_23589"},
+    {"key_8": "value_24498"},
+    {"key_9": "value_25406"},
+    {"key_10": "value_26315"},
+    {"key_11": "value_27223"},
+    {"key_12": "value_28132"}
+  ],
+  "timestamp": "2026-09-10T20:13:23Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

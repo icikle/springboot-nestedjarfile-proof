@@ -1,0 +1,18 @@
+{
+  "id": 102,
+  "name": "Resource 102",
+  "description": "",
+  "data": [
+    {"key_1": "value_10735"},
+    {"key_2": "value_11643"},
+    {"key_3": "value_12552"},
+    {"key_4": "value_13460"},
+    {"key_5": "value_14369"},
+    {"key_6": "value_15278"},
+    {"key_7": "value_16186"},
+    {"key_8": "value_17095"},
+    {"key_9": "value_18003"}
+  ],
+  "timestamp": "2026-09-10T20:13:38Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

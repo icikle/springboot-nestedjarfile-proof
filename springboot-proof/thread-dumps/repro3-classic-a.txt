@@ -1,0 +1,297 @@
+72841:
+2026-09-12 17:45:14
+Full thread dump OpenJDK 64-Bit Server VM (25.0.4.1 mixed mode, sharing):
+
+Threads class SMR info:
+_java_thread_list=0x000000083a2f7920, length=17, elements={
+0x00000001035a4140, 0x000000083b0fa000, 0x000000083b0fa800, 0x000000083b0fb000,
+0x000000083b0fb800, 0x000000083b108000, 0x000000083ac81e00, 0x000000083ac82800,
+0x000000083b108800, 0x000000083b109000, 0x000000083b10a000, 0x000000083b2ae000,
+0x000000083b2ae800, 0x000000083b2af800, 0x000000083b226000, 0x000000083b330000,
+0x000000083b332000
+}
+
+"main" #3 [4355] prio=5 os_prio=31 cpu=502.93ms elapsed=85.77s tid=0x00000001035a4140 nid=4355 waiting for monitor entry  [0x000000016d369000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)
+	- waiting to lock <0x000000703d28c070> (a org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)
+	at org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)
+	at java.net.URL.openConnection(java.base@25.0.4.1/URL.java:1209)
+	at jdk.internal.loader.URLClassPath$Loader.findResource(java.base@25.0.4.1/URLClassPath.java:524)
+	at jdk.internal.loader.URLClassPath.findResource(java.base@25.0.4.1/URLClassPath.java:268)
+	at java.net.URLClassLoader.findResource(java.base@25.0.4.1/URLClassLoader.java:550)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.findResource(JarUrlClassLoader.java:73)
+	at java.lang.ClassLoader.getResource(java.base@25.0.4.1/ClassLoader.java:1349)
+	at org.springframework.core.io.ClassPathResource.resolveURL(ClassPathResource.java:179)
+	at org.springframework.core.io.ClassPathResource.exists(ClassPathResource.java:154)
+	at com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:95)
+	at com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.initialize(NestedJarFileContentionInitializer.java:78)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:623)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:393)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at com.github.icikle.nestedjarfile_reproduce.NestedjarfileReproduceApplication.main(NestedjarfileReproduceApplication.java:33)
+	at java.lang.invoke.LambdaForm$DMH/0x000000f001058000.invokeStatic(java.base@25.0.4.1/LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$MH/0x000000f001058c00.invoke(java.base@25.0.4.1/LambdaForm$MH)
+	at java.lang.invoke.Invokers$Holder.invokeExact_MT(java.base@25.0.4.1/Invokers$Holder)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(java.base@25.0.4.1/DirectMethodHandleAccessor.java:155)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(java.base@25.0.4.1/DirectMethodHandleAccessor.java:104)
+	at java.lang.reflect.Method.invoke(java.base@25.0.4.1/Method.java:565)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #12 [28675] daemon prio=10 os_prio=31 cpu=0.49ms elapsed=85.76s tid=0x000000083b0fa000 nid=28675 waiting on condition  [0x000000016e4e2000]
+   java.lang.Thread.State: RUNNABLE
+	at java.lang.ref.Reference.waitForReferencePendingList(java.base@25.0.4.1/Native Method)
+	at java.lang.ref.Reference.processPendingReferences(java.base@25.0.4.1/Reference.java:246)
+	at java.lang.ref.Reference$ReferenceHandler.run(java.base@25.0.4.1/Reference.java:208)
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #13 [28163] daemon prio=8 os_prio=31 cpu=0.05ms elapsed=85.76s tid=0x000000083b0fa800 nid=28163 in Object.wait()  [0x000000016e6ee000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@25.0.4.1/Native Method)
+	- waiting on <0x000000703d010078> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.Object.wait(java.base@25.0.4.1/Object.java:389)
+	at java.lang.Object.wait(java.base@25.0.4.1/Object.java:351)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@25.0.4.1/ReferenceQueue.java:137)
+	at java.lang.ref.ReferenceQueue.remove(java.base@25.0.4.1/ReferenceQueue.java:215)
+	- locked <0x000000703d010078> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.Finalizer$FinalizerThread.run(java.base@25.0.4.1/Finalizer.java:165)
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #14 [23811] daemon prio=9 os_prio=31 cpu=0.18ms elapsed=85.76s tid=0x000000083b0fb000 nid=23811 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #15 [27651] daemon prio=9 os_prio=31 cpu=1.03ms elapsed=85.76s tid=0x000000083b0fb800 nid=27651 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Monitor Deflation Thread" #16 [27139] daemon prio=9 os_prio=31 cpu=3.97ms elapsed=85.76s tid=0x000000083b108000 nid=27139 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #17 [24579] daemon prio=9 os_prio=31 cpu=502.22ms elapsed=85.76s tid=0x000000083ac81e00 nid=24579 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread0" #18 [26627] daemon prio=9 os_prio=31 cpu=263.37ms elapsed=85.76s tid=0x000000083ac82800 nid=26627 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+   Locked ownable synchronizers:
+	- None
+
+"Notification Thread" #19 [26115] daemon prio=9 os_prio=31 cpu=0.03ms elapsed=85.75s tid=0x000000083b108800 nid=26115 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Common-Cleaner" #20 [25603] daemon prio=8 os_prio=31 cpu=0.12ms elapsed=85.75s tid=0x000000083b109000 nid=25603 in Object.wait()  [0x000000016f542000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@25.0.4.1/Native Method)
+	- waiting on <0x000000703d0083b8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.Object.wait(java.base@25.0.4.1/Object.java:389)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@25.0.4.1/ReferenceQueue.java:123)
+	at java.lang.ref.ReferenceQueue.remove(java.base@25.0.4.1/ReferenceQueue.java:201)
+	- locked <0x000000703d0083b8> (a java.lang.ref.ReferenceQueue$Lock)
+	at jdk.internal.ref.CleanerImpl.run(java.base@25.0.4.1/CleanerImpl.java:146)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4.1/Thread.java:1474)
+	at jdk.internal.misc.InnocuousThread.run(java.base@25.0.4.1/InnocuousThread.java:148)
+
+   Locked ownable synchronizers:
+	- None
+
+"Cleaner-0" #21 [25091] daemon prio=8 os_prio=31 cpu=0.79ms elapsed=85.72s tid=0x000000083b10a000 nid=25091 in Object.wait()  [0x000000016f74e000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@25.0.4.1/Native Method)
+	- waiting on <0x000000703d010130> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.Object.wait(java.base@25.0.4.1/Object.java:389)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@25.0.4.1/ReferenceQueue.java:123)
+	at java.lang.ref.ReferenceQueue.remove(java.base@25.0.4.1/ReferenceQueue.java:201)
+	- locked <0x000000703d010130> (a java.lang.ref.ReferenceQueue$Lock)
+	at jdk.internal.ref.CleanerImpl.run(java.base@25.0.4.1/CleanerImpl.java:146)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4.1/Thread.java:1474)
+	at jdk.internal.misc.InnocuousThread.run(java.base@25.0.4.1/InnocuousThread.java:148)
+
+   Locked ownable synchronizers:
+	- None
+
+"background-preinit" #26 [33539] prio=5 os_prio=31 cpu=53.31ms elapsed=85.30s tid=0x000000083b2ae000 nid=33539 waiting for monitor entry  [0x000000016fd71000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)
+	- waiting to lock <0x000000703d28c070> (a org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)
+	at org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)
+	at java.net.URL.openConnection(java.base@25.0.4.1/URL.java:1209)
+	at jdk.internal.loader.URLClassPath$Loader.getResource(java.base@25.0.4.1/URLClassPath.java:557)
+	at jdk.internal.loader.URLClassPath.getResource(java.base@25.0.4.1/URLClassPath.java:332)
+	at java.net.URLClassLoader.findClass(java.base@25.0.4.1/URLClassLoader.java:364)
+	at java.lang.ClassLoader.loadClass(java.base@25.0.4.1/ClassLoader.java:557)
+	- locked <0x000000703db73180> (a java.lang.Object)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.loadClass(JarUrlClassLoader.java:107)
+	at org.springframework.boot.loader.launch.LaunchedClassLoader.loadClass(LaunchedClassLoader.java:91)
+	at java.lang.ClassLoader.loadClass(java.base@25.0.4.1/ClassLoader.java:490)
+	at tools.jackson.databind.cfg.MapperBuilder.<clinit>(MapperBuilder.java:64)
+	at tools.jackson.databind.json.JsonMapper.builder(JsonMapper.java:147)
+	at org.springframework.http.converter.json.JacksonJsonHttpMessageConverter.<init>(JacksonJsonHttpMessageConverter.java:74)
+	at org.springframework.http.converter.DefaultHttpMessageConverters$DefaultBuilder.detectMessageConverters(DefaultHttpMessageConverters.java:304)
+	at org.springframework.http.converter.DefaultHttpMessageConverters$DefaultClientBuilder.build(DefaultHttpMessageConverters.java:468)
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:42)
+	at org.springframework.boot.http.converter.autoconfigure.MessageConverterBackgroundPreinitializer.preinitialize(MessageConverterBackgroundPreinitializer.java:32)
+	at org.springframework.boot.autoconfigure.preinitialize.BackgroundPreinitializingApplicationListener$Runner.run(BackgroundPreinitializingApplicationListener.java:123)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4.1/Thread.java:1474)
+
+   Locked ownable synchronizers:
+	- None
+
+"VirtualThread-unblocker" #27 [34051] daemon prio=5 os_prio=31 cpu=0.11ms elapsed=85.26s tid=0x000000083b2ae800 nid=34051 runnable  [0x000000016ff7e000]
+   java.lang.Thread.State: RUNNABLE
+	at java.lang.VirtualThread.takeVirtualThreadListToUnblock(java.base@25.0.4.1/Native Method)
+	at java.lang.VirtualThread.unblockVirtualThreads(java.base@25.0.4.1/VirtualThread.java:1519)
+	at java.lang.VirtualThread$$Lambda/0x000000f0010f7df0.run(java.base@25.0.4.1/Unknown Source)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4.1/Thread.java:1474)
+	at jdk.internal.misc.InnocuousThread.run(java.base@25.0.4.1/InnocuousThread.java:148)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool-1-worker-1" #29 [43011] daemon prio=5 os_prio=31 cpu=2.91ms elapsed=85.26s tid=0x000000083b2af800  [0x000000017018a000]
+   Carrying virtual thread #37
+	at jdk.internal.vm.Continuation.run(java.base@25.0.4.1/Continuation.java:251)
+	at java.lang.VirtualThread.runContinuation(java.base@25.0.4.1/VirtualThread.java:297)
+	at java.lang.VirtualThread$$Lambda/0x000000f0010f84c0.run(java.base@25.0.4.1/Unknown Source)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(java.base@25.0.4.1/ForkJoinTask.java:1753)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(java.base@25.0.4.1/ForkJoinTask.java:1745)
+	at java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(java.base@25.0.4.1/ForkJoinTask.java:1662)
+	at java.util.concurrent.ForkJoinTask.doExec(java.base@25.0.4.1/ForkJoinTask.java:511)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(java.base@25.0.4.1/ForkJoinPool.java:1450)
+	at java.util.concurrent.ForkJoinPool.runWorker(java.base@25.0.4.1/ForkJoinPool.java:2019)
+	at java.util.concurrent.ForkJoinWorkerThread.run(java.base@25.0.4.1/ForkJoinWorkerThread.java:187)
+   Mounted virtual thread #37
+	at com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$3(NestedJarFileContentionInitializer.java:62)
+	at com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer$$Lambda/0x000000f0011a7a30.run(Unknown Source)
+	at java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(java.base@25.0.4.1/ThreadPerTaskExecutor.java:291)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.VirtualThread.run(java.base@25.0.4.1/VirtualThread.java:460)
+	at java.lang.VirtualThread$VThreadContinuation$1.run(java.base@25.0.4.1/VirtualThread.java:252)
+	at jdk.internal.vm.Continuation.enter0(java.base@25.0.4.1/Continuation.java:325)
+	at jdk.internal.vm.Continuation.enter(java.base@25.0.4.1/Continuation.java:316)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool-1-worker-2" #31 [34819] daemon prio=5 os_prio=31 cpu=1.56ms elapsed=85.26s tid=0x000000083b226000  [0x0000000170396000]
+   Carrying virtual thread #36
+	at jdk.internal.vm.Continuation.run(java.base@25.0.4.1/Continuation.java:251)
+	at java.lang.VirtualThread.runContinuation(java.base@25.0.4.1/VirtualThread.java:297)
+	at java.lang.VirtualThread$$Lambda/0x000000f0010f84c0.run(java.base@25.0.4.1/Unknown Source)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(java.base@25.0.4.1/ForkJoinTask.java:1753)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(java.base@25.0.4.1/ForkJoinTask.java:1745)
+	at java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(java.base@25.0.4.1/ForkJoinTask.java:1662)
+	at java.util.concurrent.ForkJoinTask.doExec(java.base@25.0.4.1/ForkJoinTask.java:511)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(java.base@25.0.4.1/ForkJoinPool.java:1450)
+	at java.util.concurrent.ForkJoinPool.runWorker(java.base@25.0.4.1/ForkJoinPool.java:2019)
+	at java.util.concurrent.ForkJoinWorkerThread.run(java.base@25.0.4.1/ForkJoinWorkerThread.java:187)
+   Mounted virtual thread #36
+	at com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$3(NestedJarFileContentionInitializer.java:62)
+	at com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer$$Lambda/0x000000f0011a7a30.run(Unknown Source)
+	at java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(java.base@25.0.4.1/ThreadPerTaskExecutor.java:291)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.VirtualThread.run(java.base@25.0.4.1/VirtualThread.java:460)
+	at java.lang.VirtualThread$VThreadContinuation$1.run(java.base@25.0.4.1/VirtualThread.java:252)
+	at jdk.internal.vm.Continuation.enter0(java.base@25.0.4.1/Continuation.java:325)
+	at jdk.internal.vm.Continuation.enter(java.base@25.0.4.1/Continuation.java:316)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool-1-worker-3" #33 [42499] daemon prio=5 os_prio=31 cpu=1.50ms elapsed=85.25s tid=0x000000083b330000  [0x000000017059e000]
+   Carrying virtual thread #35
+	at jdk.internal.vm.Continuation.run(java.base@25.0.4.1/Continuation.java:251)
+	at java.lang.VirtualThread.runContinuation(java.base@25.0.4.1/VirtualThread.java:297)
+	at java.lang.VirtualThread$$Lambda/0x000000f0010f84c0.run(java.base@25.0.4.1/Unknown Source)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(java.base@25.0.4.1/ForkJoinTask.java:1753)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(java.base@25.0.4.1/ForkJoinTask.java:1745)
+	at java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(java.base@25.0.4.1/ForkJoinTask.java:1662)
+	at java.util.concurrent.ForkJoinTask.doExec(java.base@25.0.4.1/ForkJoinTask.java:511)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(java.base@25.0.4.1/ForkJoinPool.java:1450)
+	at java.util.concurrent.ForkJoinPool.runWorker(java.base@25.0.4.1/ForkJoinPool.java:2019)
+	at java.util.concurrent.ForkJoinWorkerThread.run(java.base@25.0.4.1/ForkJoinWorkerThread.java:187)
+   Mounted virtual thread #35
+	at org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)
+	- waiting to lock <0x000000703d28c070> (a org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)
+	at org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)
+	at java.net.URL.openConnection(java.base@25.0.4.1/URL.java:1209)
+	at jdk.internal.loader.URLClassPath$Loader.getResource(java.base@25.0.4.1/URLClassPath.java:557)
+	at jdk.internal.loader.URLClassPath.getResource(java.base@25.0.4.1/URLClassPath.java:332)
+	at java.net.URLClassLoader.findClass(java.base@25.0.4.1/URLClassLoader.java:364)
+	at java.lang.ClassLoader.loadClass(java.base@25.0.4.1/ClassLoader.java:557)
+	- locked <0x000000703cec0958> (a java.lang.Object)
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.loadClass(JarUrlClassLoader.java:107)
+	at org.springframework.boot.loader.launch.LaunchedClassLoader.loadClass(LaunchedClassLoader.java:91)
+	at java.lang.ClassLoader.loadClass(java.base@25.0.4.1/ClassLoader.java:490)
+	at com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$3(NestedJarFileContentionInitializer.java:62)
+	at com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer$$Lambda/0x000000f0011a7a30.run(Unknown Source)
+	at java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(java.base@25.0.4.1/ThreadPerTaskExecutor.java:291)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.VirtualThread.run(java.base@25.0.4.1/VirtualThread.java:460)
+	at java.lang.VirtualThread$VThreadContinuation$1.run(java.base@25.0.4.1/VirtualThread.java:252)
+	at jdk.internal.vm.Continuation.enter0(java.base@25.0.4.1/Continuation.java:325)
+	at jdk.internal.vm.Continuation.enter(java.base@25.0.4.1/Continuation.java:316)
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" #43 [29715] daemon prio=9 os_prio=31 cpu=11.52ms elapsed=0.54s tid=0x000000083b332000 nid=29715 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"GC Thread#2" os_prio=31 cpu=1.71ms elapsed=85.43s tid=0x00000008390a2300 nid=43267 runnable  
+
+"GC Thread#1" os_prio=31 cpu=1.80ms elapsed=85.43s tid=0x00000008390a1e00 nid=32771 runnable  
+
+"VM Thread" os_prio=31 cpu=7.03ms elapsed=85.76s tid=0x000000083acd1400 nid=18435 runnable  
+
+"VM Periodic Task Thread" os_prio=31 cpu=0.84ms elapsed=85.77s tid=0x000000083acd0c00 nid=20491 waiting on condition  
+
+"G1 Service" os_prio=31 cpu=1.86ms elapsed=85.77s tid=0x00000001035b16f0 nid=20995 runnable  
+
+"G1 Refine#0" os_prio=31 cpu=0.01ms elapsed=85.77s tid=0x00000001035b0c20 nid=21507 runnable  
+
+"G1 Conc#0" os_prio=31 cpu=0.01ms elapsed=85.77s tid=0x00000001035aec40 nid=13827 runnable  
+
+"G1 Main Marker" os_prio=31 cpu=0.02ms elapsed=85.77s tid=0x00000001035ae170 nid=14339 runnable  
+
+"GC Thread#0" os_prio=31 cpu=1.74ms elapsed=85.77s tid=0x00000001035ad0c0 nid=12803 runnable  
+
+JNI global refs: 7, weak refs: 0
+

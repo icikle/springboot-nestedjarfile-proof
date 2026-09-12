@@ -1,0 +1,514 @@
+{
+  "threadDump": {
+    "processId": "72841",
+    "time": "2026-09-12T05:45:14.285399Z",
+    "runtimeVersion": "25.0.4.1",
+    "threadContainers": [
+      {
+        "container": "<root>",
+        "parent": null,
+        "owner": null,
+        "threads": [
+          {
+            "tid": "3",
+            "time": "2026-09-12T05:45:14.286718Z",
+            "name": "main",
+            "state": "BLOCKED",
+            "blockedOn": "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile@5ce65a89",
+            "stack": [
+              "org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)",
+              "org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)",
+              "java.base\/java.net.URL.openConnection(URL.java:1209)",
+              "java.base\/jdk.internal.loader.URLClassPath$Loader.findResource(URLClassPath.java:524)",
+              "java.base\/jdk.internal.loader.URLClassPath.findResource(URLClassPath.java:268)",
+              "java.base\/java.net.URLClassLoader.findResource(URLClassLoader.java:550)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.findResource(JarUrlClassLoader.java:73)",
+              "java.base\/java.lang.ClassLoader.getResource(ClassLoader.java:1349)",
+              "org.springframework.core.io.ClassPathResource.resolveURL(ClassPathResource.java:179)",
+              "org.springframework.core.io.ClassPathResource.exists(ClassPathResource.java:154)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:95)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.initialize(NestedJarFileContentionInitializer.java:78)",
+              "org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:623)",
+              "org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:393)",
+              "org.springframework.boot.SpringApplication.run(SpringApplication.java:320)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedjarfileReproduceApplication.main(NestedjarfileReproduceApplication.java:33)",
+              "java.base\/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)",
+              "java.base\/java.lang.reflect.Method.invoke(Method.java:565)",
+              "org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)",
+              "org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)",
+              "org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)"
+            ]
+          },
+          {
+            "tid": "12",
+            "time": "2026-09-12T05:45:14.287622Z",
+            "name": "Reference Handler",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/java.lang.ref.Reference.waitForReferencePendingList(Native Method)",
+              "java.base\/java.lang.ref.Reference.processPendingReferences(Reference.java:246)",
+              "java.base\/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)"
+            ]
+          },
+          {
+            "tid": "13",
+            "time": "2026-09-12T05:45:14.287735Z",
+            "name": "Finalizer",
+            "state": "WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@6e122d85",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.Object.wait(Object.java:351)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:137)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)",
+              "java.base\/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:165)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 4,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@6e122d85"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "14",
+            "time": "2026-09-12T05:45:14.288630Z",
+            "name": "Signal Dispatcher",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "19",
+            "time": "2026-09-12T05:45:14.288700Z",
+            "name": "Notification Thread",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "20",
+            "time": "2026-09-12T05:45:14.288748Z",
+            "name": "Common-Cleaner",
+            "state": "TIMED_WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@2fa93c62",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)",
+              "java.base\/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:146)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 3,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@2fa93c62"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "21",
+            "time": "2026-09-12T05:45:14.288952Z",
+            "name": "Cleaner-0",
+            "state": "TIMED_WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@3bb0f4b8",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)",
+              "java.base\/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:146)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 3,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@3bb0f4b8"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "26",
+            "time": "2026-09-12T05:45:14.289153Z",
+            "name": "background-preinit",
+            "state": "BLOCKED",
+            "blockedOn": "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile@5ce65a89",
+            "stack": [
+              "org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)",
+              "org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)",
+              "java.base\/java.net.URL.openConnection(URL.java:1209)",
+              "java.base\/jdk.internal.loader.URLClassPath$Loader.getResource(URLClassPath.java:557)",
+              "java.base\/jdk.internal.loader.URLClassPath.getResource(URLClassPath.java:332)",
+              "java.base\/java.net.URLClassLoader.findClass(URLClassLoader.java:364)",
+              "java.base\/java.lang.ClassLoader.loadClass(ClassLoader.java:557)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.loadClass(JarUrlClassLoader.java:107)",
+              "org.springframework.boot.loader.launch.LaunchedClassLoader.loadClass(LaunchedClassLoader.java:91)",
+              "java.base\/java.lang.ClassLoader.loadClass(ClassLoader.java:490)",
+              "tools.jackson.databind.cfg.MapperBuilder.<clinit>(MapperBuilder.java:64)",
+              "tools.jackson.databind.json.JsonMapper.builder(JsonMapper.java:147)",
+              "org.springframework.http.converter.json.JacksonJsonHttpMessageConverter.<init>(JacksonJsonHttpMessageConverter.java:74)",
+              "org.springframework.http.converter.DefaultHttpMessageConverters$DefaultBuilder.detectMessageConverters(DefaultHttpMessageConverters.java:304)",
+              "org.springframework.http.converter.DefaultHttpMessageConverters$DefaultClientBuilder.build(DefaultHttpMessageConverters.java:468)",
+              "org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:42)",
+              "org.springframework.boot.http.converter.autoconfigure.MessageConverterBackgroundPreinitializer.preinitialize(MessageConverterBackgroundPreinitializer.java:32)",
+              "org.springframework.boot.autoconfigure.preinitialize.BackgroundPreinitializingApplicationListener$Runner.run(BackgroundPreinitializingApplicationListener.java:123)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 8,
+                "locks": [
+                  "java.lang.Object@5b4119e3"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "27",
+            "time": "2026-09-12T05:45:14.289749Z",
+            "name": "VirtualThread-unblocker",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/java.lang.VirtualThread.takeVirtualThreadListToUnblock(Native Method)",
+              "java.base\/java.lang.VirtualThread.unblockVirtualThreads(VirtualThread.java:1519)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ]
+          },
+          {
+            "tid": "43",
+            "time": "2026-09-12T05:45:14.289829Z",
+            "name": "Attach Listener",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.ThreadSnapshot.create(Native Method)",
+              "java.base\/jdk.internal.vm.ThreadSnapshot.of(ThreadSnapshot.java:62)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThread(ThreadDumper.java:319)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreads(ThreadDumper.java:294)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToJson(ThreadDumper.java:269)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToFile(ThreadDumper.java:131)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToJson(ThreadDumper.java:89)"
+            ]
+          }
+        ],
+        "threadCount": "10"
+      },
+      {
+        "container": "ForkJoinPool-1\/jdk.internal.vm.SharedThreadContainer@6524c86b",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+          {
+            "tid": "29",
+            "time": "2026-09-12T05:45:14.290784Z",
+            "name": "ForkJoinPool-1-worker-1",
+            "state": "BLOCKED",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:251)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          },
+          {
+            "tid": "31",
+            "time": "2026-09-12T05:45:14.290893Z",
+            "name": "ForkJoinPool-1-worker-2",
+            "state": "BLOCKED",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:251)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          },
+          {
+            "tid": "33",
+            "time": "2026-09-12T05:45:14.290967Z",
+            "name": "ForkJoinPool-1-worker-3",
+            "state": "BLOCKED",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:251)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          }
+        ],
+        "threadCount": "3"
+      },
+      {
+        "container": "java.util.concurrent.ThreadPerTaskExecutor@63672419",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+          {
+            "tid": "32",
+            "time": "2026-09-12T05:45:14.291212Z",
+            "virtual": true,
+            "name": "",
+            "state": "BLOCKED",
+            "blockedOn": "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile@5ce65a89",
+            "stack": [
+              "org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)",
+              "org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)",
+              "java.base\/java.net.URL.openConnection(URL.java:1209)",
+              "java.base\/jdk.internal.loader.URLClassPath$Loader.findResource(URLClassPath.java:524)",
+              "java.base\/jdk.internal.loader.URLClassPath.findResource(URLClassPath.java:268)",
+              "java.base\/java.net.URLClassLoader.findResource(URLClassLoader.java:550)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.findResource(JarUrlClassLoader.java:73)",
+              "java.base\/java.lang.ClassLoader.getResource(ClassLoader.java:1349)",
+              "org.springframework.core.io.ClassPathResource.resolveURL(ClassPathResource.java:179)",
+              "org.springframework.core.io.ClassPathResource.exists(ClassPathResource.java:154)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:95)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:46)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:46)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ]
+          },
+          {
+            "tid": "34",
+            "time": "2026-09-12T05:45:14.291849Z",
+            "virtual": true,
+            "name": "",
+            "state": "BLOCKED",
+            "blockedOn": "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile@5ce65a89",
+            "stack": [
+              "org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)",
+              "org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)",
+              "java.base\/java.net.URL.openConnection(URL.java:1209)",
+              "java.base\/jdk.internal.loader.URLClassPath$Loader.findResource(URLClassPath.java:524)",
+              "java.base\/jdk.internal.loader.URLClassPath.findResource(URLClassPath.java:268)",
+              "java.base\/java.net.URLClassLoader.findResource(URLClassLoader.java:550)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.findResource(JarUrlClassLoader.java:73)",
+              "java.base\/java.lang.ClassLoader.getResource(ClassLoader.java:1349)",
+              "org.springframework.core.io.ClassPathResource.resolveURL(ClassPathResource.java:179)",
+              "org.springframework.core.io.ClassPathResource.exists(ClassPathResource.java:154)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:95)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:46)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:46)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ]
+          },
+          {
+            "tid": "35",
+            "time": "2026-09-12T05:45:14.291967Z",
+            "virtual": true,
+            "name": "",
+            "state": "BLOCKED",
+            "blockedOn": "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile@5ce65a89",
+            "stack": [
+              "org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)",
+              "org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)",
+              "java.base\/java.net.URL.openConnection(URL.java:1209)",
+              "java.base\/jdk.internal.loader.URLClassPath$Loader.getResource(URLClassPath.java:557)",
+              "java.base\/jdk.internal.loader.URLClassPath.getResource(URLClassPath.java:332)",
+              "java.base\/java.net.URLClassLoader.findClass(URLClassLoader.java:364)",
+              "java.base\/java.lang.ClassLoader.loadClass(ClassLoader.java:557)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.loadClass(JarUrlClassLoader.java:107)",
+              "org.springframework.boot.loader.launch.LaunchedClassLoader.loadClass(LaunchedClassLoader.java:91)",
+              "java.base\/java.lang.ClassLoader.loadClass(ClassLoader.java:490)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$3(NestedJarFileContentionInitializer.java:62)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 8,
+                "locks": [
+                  "java.lang.Object@78e21d91"
+                ]
+              }
+            ],
+            "carrier": "33"
+          },
+          {
+            "tid": "36",
+            "time": "2026-09-12T05:45:14.292160Z",
+            "virtual": true,
+            "name": "",
+            "state": "BLOCKED",
+            "stack": [
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$3(NestedJarFileContentionInitializer.java:62)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "carrier": "31"
+          },
+          {
+            "tid": "37",
+            "time": "2026-09-12T05:45:14.292205Z",
+            "virtual": true,
+            "name": "",
+            "state": "BLOCKED",
+            "stack": [
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$3(NestedJarFileContentionInitializer.java:62)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "carrier": "29"
+          },
+          {
+            "tid": "38",
+            "time": "2026-09-12T05:45:14.292245Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "39",
+            "time": "2026-09-12T05:45:14.292267Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "40",
+            "time": "2026-09-12T05:45:14.292285Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "41",
+            "time": "2026-09-12T05:45:14.292306Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "42",
+            "time": "2026-09-12T05:45:14.292324Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "28",
+            "time": "2026-09-12T05:45:14.292341Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "org.springframework.boot.loader.zip.FileDataBlock$FileAccess.ensureOpen(FileDataBlock.java:282)",
+              "org.springframework.boot.loader.zip.FileDataBlock.ensureOpen(FileDataBlock.java:117)",
+              "org.springframework.boot.loader.zip.FileDataBlock.read(FileDataBlock.java:73)",
+              "org.springframework.boot.loader.zip.DataBlock.readFully(DataBlock.java:64)",
+              "org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord.load(ZipCentralDirectoryFileHeaderRecord.java:198)",
+              "org.springframework.boot.loader.zip.ZipContent.loadZipCentralDirectoryFileHeaderRecord(ZipContent.java:259)",
+              "org.springframework.boot.loader.zip.ZipContent.getEntry(ZipContent.java:253)",
+              "org.springframework.boot.loader.jar.NestedJarFile$JarEntriesEnumeration.nextElement(NestedJarFile.java:654)",
+              "org.springframework.boot.loader.jar.NestedJarFile$JarEntriesEnumeration.nextElement(NestedJarFile.java:632)",
+              "org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindPathMatchingJarResources(PathMatchingResourcePatternResolver.java:961)",
+              "org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:779)",
+              "org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:390)",
+              "org.springframework.context.support.AbstractApplicationContext.getResources(AbstractApplicationContext.java:1574)",
+              "org.springframework.context.support.GenericApplicationContext.getResources(GenericApplicationContext.java:262)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:99)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:46)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:46)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 7,
+                "locks": [
+                  "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile@5ce65a89"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "30",
+            "time": "2026-09-12T05:45:14.292715Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "org.springframework.boot.loader.jar.NestedJarFile.entries(NestedJarFile.java:175)",
+              "org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindPathMatchingJarResources(PathMatchingResourcePatternResolver.java:960)",
+              "org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:779)",
+              "org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:390)",
+              "org.springframework.context.support.AbstractApplicationContext.getResources(AbstractApplicationContext.java:1574)",
+              "org.springframework.context.support.GenericApplicationContext.getResources(GenericApplicationContext.java:262)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:99)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:46)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:46)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ]
+          }
+        ],
+        "threadCount": "12"
+      },
+      {
+        "container": "java.util.concurrent.ThreadPoolExecutor@6aaceffd",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+        ],
+        "threadCount": "0"
+      },
+      {
+        "container": "ForkJoinPool.commonPool\/jdk.internal.vm.SharedThreadContainer@7c03e1ca",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+        ],
+        "threadCount": "0"
+      }
+    ]
+  }
+}

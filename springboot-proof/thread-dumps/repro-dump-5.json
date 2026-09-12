@@ -1,0 +1,454 @@
+{
+  "threadDump": {
+    "processId": "12648",
+    "time": "2026-09-11T21:01:23.589724Z",
+    "runtimeVersion": "25.0.4.1",
+    "threadContainers": [
+      {
+        "container": "<root>",
+        "parent": null,
+        "owner": null,
+        "threads": [
+          {
+            "tid": "3",
+            "time": "2026-09-11T21:01:23.589831Z",
+            "name": "main",
+            "state": "BLOCKED",
+            "blockedOn": "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile@5ce65a89",
+            "stack": [
+              "org.springframework.boot.loader.jar.NestedJarFile.hasEntry(NestedJarFile.java:251)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.hasEntry(JarUrlConnection.java:356)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.open(JarUrlConnection.java:347)",
+              "org.springframework.boot.loader.net.protocol.jar.Handler.openConnection(Handler.java:46)",
+              "java.base\/java.net.URL.openConnection(URL.java:1209)",
+              "java.base\/jdk.internal.loader.URLClassPath$Loader.getResource(URLClassPath.java:557)",
+              "java.base\/jdk.internal.loader.URLClassPath.getResource(URLClassPath.java:332)",
+              "java.base\/java.net.URLClassLoader.findClass(URLClassLoader.java:364)",
+              "java.base\/java.lang.ClassLoader.loadClass(ClassLoader.java:557)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.loadClass(JarUrlClassLoader.java:107)",
+              "org.springframework.boot.loader.launch.LaunchedClassLoader.loadClass(LaunchedClassLoader.java:91)",
+              "java.base\/java.lang.ClassLoader.loadClass(ClassLoader.java:490)",
+              "java.base\/java.lang.Class.forName0(Native Method)",
+              "java.base\/java.lang.Class.forName(Class.java:547)",
+              "java.base\/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)",
+              "java.base\/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)",
+              "java.base\/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)",
+              "java.base\/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:437)",
+              "java.base\/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:240)",
+              "java.base\/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)",
+              "java.base\/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)",
+              "java.base\/java.lang.reflect.Field.declaredAnnotations(Field.java:1276)",
+              "java.base\/java.lang.reflect.Field.declaredAnnotations(Field.java:1274)",
+              "java.base\/java.lang.reflect.Field.getAnnotation(Field.java:1241)",
+              "java.base\/java.lang.reflect.AnnotatedElement.isAnnotationPresent(AnnotatedElement.java:291)",
+              "java.base\/java.lang.reflect.AccessibleObject.isAnnotationPresent(AccessibleObject.java:515)",
+              "org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.lambda$buildResourceMetadata$0(CommonAnnotationBeanPostProcessor.java:414)",
+              "org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:691)",
+              "org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:407)",
+              "org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:388)",
+              "org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:291)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1112)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)",
+              "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)",
+              "org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229)",
+              "org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1769)",
+              "org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)",
+              "org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)",
+              "org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)",
+              "org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)",
+              "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)",
+              "org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1360)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)",
+              "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)",
+              "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)",
+              "org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)",
+              "org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:225)",
+              "org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)",
+              "org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)",
+              "org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)",
+              "org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)",
+              "org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)",
+              "org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)",
+              "org.springframework.boot.SpringApplication.run(SpringApplication.java:321)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedjarfileReproduceApplication.main(NestedjarfileReproduceApplication.java:33)",
+              "java.base\/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)",
+              "java.base\/java.lang.reflect.Method.invoke(Method.java:565)",
+              "org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)",
+              "org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)",
+              "org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 8,
+                "locks": [
+                  "java.lang.Object@67020583"
+                ]
+              },
+              {
+                "depth": 21,
+                "locks": [
+                  "java.lang.reflect.Field@713aaa9d"
+                ]
+              },
+              {
+                "depth": 22,
+                "locks": [
+                  "java.lang.reflect.Field@2e58393"
+                ]
+              },
+              {
+                "depth": 29,
+                "locks": [
+                  "java.util.concurrent.ConcurrentHashMap@1e4aaec4"
+                ]
+              },
+              {
+                "depth": 32,
+                "locks": [
+                  "java.lang.Object@69138e93"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "12",
+            "time": "2026-09-11T21:01:23.590370Z",
+            "name": "Reference Handler",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/java.lang.ref.Reference.waitForReferencePendingList(Native Method)",
+              "java.base\/java.lang.ref.Reference.processPendingReferences(Reference.java:246)",
+              "java.base\/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)"
+            ]
+          },
+          {
+            "tid": "13",
+            "time": "2026-09-11T21:01:23.590402Z",
+            "name": "Finalizer",
+            "state": "WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@463eb466",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.Object.wait(Object.java:351)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:137)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)",
+              "java.base\/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:165)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 4,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@463eb466"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "14",
+            "time": "2026-09-11T21:01:23.590477Z",
+            "name": "Signal Dispatcher",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "19",
+            "time": "2026-09-11T21:01:23.590491Z",
+            "name": "Notification Thread",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "20",
+            "time": "2026-09-11T21:01:23.590503Z",
+            "name": "Common-Cleaner",
+            "state": "TIMED_WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@2ecde7a7",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)",
+              "java.base\/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:146)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 3,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@2ecde7a7"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "21",
+            "time": "2026-09-11T21:01:23.590552Z",
+            "name": "Cleaner-0",
+            "state": "TIMED_WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@5ba34f89",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)",
+              "java.base\/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:146)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 3,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@5ba34f89"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "27",
+            "time": "2026-09-11T21:01:23.590605Z",
+            "name": "VirtualThread-unblocker",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/java.lang.VirtualThread.takeVirtualThreadListToUnblock(Native Method)",
+              "java.base\/java.lang.VirtualThread.unblockVirtualThreads(VirtualThread.java:1519)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ]
+          },
+          {
+            "tid": "36",
+            "time": "2026-09-11T21:01:23.590630Z",
+            "name": "Attach Listener",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.ThreadSnapshot.create(Native Method)",
+              "java.base\/jdk.internal.vm.ThreadSnapshot.of(ThreadSnapshot.java:62)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThread(ThreadDumper.java:319)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreads(ThreadDumper.java:294)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToJson(ThreadDumper.java:269)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToFile(ThreadDumper.java:131)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToJson(ThreadDumper.java:89)"
+            ]
+          }
+        ],
+        "threadCount": "9"
+      },
+      {
+        "container": "ForkJoinPool.commonPool\/jdk.internal.vm.SharedThreadContainer@18e96b56",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+        ],
+        "threadCount": "0"
+      },
+      {
+        "container": "java.util.concurrent.ThreadPoolExecutor@6aaceffd",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+        ],
+        "threadCount": "0"
+      },
+      {
+        "container": "java.util.concurrent.ThreadPerTaskExecutor@2f9ea657",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+          {
+            "tid": "33",
+            "time": "2026-09-11T21:01:23.590904Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.busySpin(NestedJarFileContentionInitializer.java:91)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$scan$0(NestedJarFileContentionInitializer.java:82)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)",
+              "java.base\/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)",
+              "java.base\/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)",
+              "java.base\/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)",
+              "java.base\/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)",
+              "java.base\/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)",
+              "java.base\/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:80)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "carrier": "32"
+          },
+          {
+            "tid": "34",
+            "time": "2026-09-11T21:01:23.591073Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "org.springframework.boot.loader.jar.NestedJarFile$JarEntryInputStream.read(NestedJarFile.java:721)",
+              "java.base\/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:308)",
+              "org.springframework.boot.loader.jar.ZipInflaterInputStream.fill(ZipInflaterInputStream.java:67)",
+              "java.base\/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:208)",
+              "org.springframework.boot.loader.jar.ZipInflaterInputStream.read(ZipInflaterInputStream.java:57)",
+              "org.springframework.boot.loader.net.protocol.jar.LazyDelegatingInputStream.read(LazyDelegatingInputStream.java:43)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.drain(NestedJarFileContentionInitializer.java:109)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$scan$0(NestedJarFileContentionInitializer.java:81)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)",
+              "java.base\/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)",
+              "java.base\/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)",
+              "java.base\/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)",
+              "java.base\/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)",
+              "java.base\/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)",
+              "java.base\/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:80)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ]
+          },
+          {
+            "tid": "28",
+            "time": "2026-09-11T21:01:23.591184Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.busySpin(NestedJarFileContentionInitializer.java:91)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$scan$0(NestedJarFileContentionInitializer.java:82)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)",
+              "java.base\/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)",
+              "java.base\/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)",
+              "java.base\/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)",
+              "java.base\/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)",
+              "java.base\/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)",
+              "java.base\/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:80)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "carrier": "29"
+          },
+          {
+            "tid": "30",
+            "time": "2026-09-11T21:01:23.591300Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.busySpin(NestedJarFileContentionInitializer.java:91)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$scan$0(NestedJarFileContentionInitializer.java:82)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)",
+              "java.base\/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)",
+              "java.base\/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)",
+              "java.base\/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)",
+              "java.base\/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)",
+              "java.base\/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)",
+              "java.base\/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:80)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "carrier": "31"
+          }
+        ],
+        "threadCount": "4"
+      },
+      {
+        "container": "ForkJoinPool-1\/jdk.internal.vm.SharedThreadContainer@1a0195f3",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+          {
+            "tid": "29",
+            "time": "2026-09-11T21:01:23.592353Z",
+            "name": "ForkJoinPool-1-worker-1",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:254)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          },
+          {
+            "tid": "31",
+            "time": "2026-09-11T21:01:23.592443Z",
+            "name": "ForkJoinPool-1-worker-2",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:254)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          },
+          {
+            "tid": "32",
+            "time": "2026-09-11T21:01:23.592507Z",
+            "name": "ForkJoinPool-1-worker-3",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:254)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          }
+        ],
+        "threadCount": "3"
+      }
+    ]
+  }
+}

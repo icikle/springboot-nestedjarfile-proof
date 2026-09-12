@@ -1,0 +1,26 @@
+{
+  "id": 7,
+  "name": "Resource 7",
+  "description": "",
+  "data": [
+    {"key_1": "value_14346"},
+    {"key_2": "value_15254"},
+    {"key_3": "value_16163"},
+    {"key_4": "value_17071"},
+    {"key_5": "value_17980"},
+    {"key_6": "value_18889"},
+    {"key_7": "value_19797"},
+    {"key_8": "value_20706"},
+    {"key_9": "value_21614"},
+    {"key_10": "value_22523"},
+    {"key_11": "value_23432"},
+    {"key_12": "value_24340"},
+    {"key_13": "value_25249"},
+    {"key_14": "value_26158"},
+    {"key_15": "value_27066"},
+    {"key_16": "value_27975"},
+    {"key_17": "value_28883"}
+  ],
+  "timestamp": "2026-09-10T20:13:19Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. o"
+}

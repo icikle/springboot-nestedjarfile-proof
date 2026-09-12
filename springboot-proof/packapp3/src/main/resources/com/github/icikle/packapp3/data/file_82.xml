@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="82" name="Resource_82">
+  <metadata>
+    <created>2026-09-10T20:13:37Z</created>
+    <size>4910</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_9452</value></item>
+    <item id="2"><value>Random_Data_26291</value></item>
+    <item id="3"><value>Random_Data_10361</value></item>
+    <item id="4"><value>Random_Data_27199</value></item>
+    <item id="5"><value>Random_Data_11269</value></item>
+    <item id="6"><value>Random_Data_28108</value></item>
+    <item id="7"><value>Random_Data_12178</value></item>
+    <item id="8"><value>Random_Data_29016</value></item>
+    <item id="9"><value>Random_Data_13087</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </content>
+</resource>

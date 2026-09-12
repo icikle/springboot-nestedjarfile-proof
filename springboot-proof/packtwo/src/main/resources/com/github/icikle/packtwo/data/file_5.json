@@ -1,0 +1,20 @@
+{
+  "id": 5,
+  "name": "Resource 5",
+  "description": "",
+  "data": [
+    {"key_1": "value_26643"},
+    {"key_2": "value_27551"},
+    {"key_3": "value_28460"},
+    {"key_4": "value_29368"},
+    {"key_5": "value_30277"},
+    {"key_6": "value_31186"},
+    {"key_7": "value_32094"},
+    {"key_8": "value_235"},
+    {"key_9": "value_1143"},
+    {"key_10": "value_2052"},
+    {"key_11": "value_2961"}
+  ],
+  "timestamp": "2026-09-10T20:13:13Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

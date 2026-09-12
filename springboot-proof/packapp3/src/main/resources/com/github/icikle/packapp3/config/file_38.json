@@ -1,0 +1,24 @@
+{
+  "id": 38,
+  "name": "Resource 38",
+  "description": "",
+  "data": [
+    {"key_1": "value_27440"},
+    {"key_2": "value_28349"},
+    {"key_3": "value_29257"},
+    {"key_4": "value_30166"},
+    {"key_5": "value_31075"},
+    {"key_6": "value_31983"},
+    {"key_7": "value_124"},
+    {"key_8": "value_1032"},
+    {"key_9": "value_18779"},
+    {"key_10": "value_19688"},
+    {"key_11": "value_20597"},
+    {"key_12": "value_21505"},
+    {"key_13": "value_22414"},
+    {"key_14": "value_23322"},
+    {"key_15": "value_24231"}
+  ],
+  "timestamp": "2026-09-10T20:13:34Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

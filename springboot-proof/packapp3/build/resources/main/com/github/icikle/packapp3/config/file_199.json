@@ -1,0 +1,13 @@
+{
+  "id": 199,
+  "name": "Resource 199",
+  "description": "",
+  "data": [
+    {"key_1": "value_2201"},
+    {"key_2": "value_3110"},
+    {"key_3": "value_4019"},
+    {"key_4": "value_4927"}
+  ],
+  "timestamp": "2026-09-10T20:13:45Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

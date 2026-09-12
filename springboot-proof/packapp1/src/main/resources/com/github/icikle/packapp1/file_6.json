@@ -1,0 +1,22 @@
+{
+  "id": 6,
+  "name": "Resource 6",
+  "description": "",
+  "data": [
+    {"key_1": "value_4732"},
+    {"key_2": "value_5640"},
+    {"key_3": "value_6549"},
+    {"key_4": "value_7457"},
+    {"key_5": "value_8366"},
+    {"key_6": "value_9275"},
+    {"key_7": "value_10183"},
+    {"key_8": "value_11092"},
+    {"key_9": "value_12001"},
+    {"key_10": "value_12909"},
+    {"key_11": "value_13818"},
+    {"key_12": "value_14726"},
+    {"key_13": "value_15635"}
+  ],
+  "timestamp": "2026-09-10T20:13:19Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

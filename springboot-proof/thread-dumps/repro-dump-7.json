@@ -1,0 +1,486 @@
+{
+  "threadDump": {
+    "processId": "12648",
+    "time": "2026-09-11T21:01:25.006241Z",
+    "runtimeVersion": "25.0.4.1",
+    "threadContainers": [
+      {
+        "container": "<root>",
+        "parent": null,
+        "owner": null,
+        "threads": [
+          {
+            "tid": "3",
+            "time": "2026-09-11T21:01:25.006356Z",
+            "name": "main",
+            "state": "BLOCKED",
+            "blockedOn": "java.lang.Object@630e444d",
+            "stack": [
+              "org.springframework.boot.loader.zip.FileDataBlock$FileAccess.ensureOpen(FileDataBlock.java:282)",
+              "org.springframework.boot.loader.zip.FileDataBlock.ensureOpen(FileDataBlock.java:117)",
+              "org.springframework.boot.loader.zip.FileDataBlock.read(FileDataBlock.java:73)",
+              "org.springframework.boot.loader.zip.DataBlock.readFully(DataBlock.java:64)",
+              "org.springframework.boot.loader.zip.ZipLocalFileHeaderRecord.load(ZipLocalFileHeaderRecord.java:115)",
+              "org.springframework.boot.loader.zip.ZipContent$Entry.getContent(ZipContent.java:839)",
+              "org.springframework.boot.loader.zip.ZipContent$Entry.openContent(ZipContent.java:829)",
+              "org.springframework.boot.loader.jar.NestedJarFile$JarEntryInputStream.<init>(NestedJarFile.java:708)",
+              "org.springframework.boot.loader.jar.NestedJarFile.getInputStream(NestedJarFile.java:359)",
+              "org.springframework.boot.loader.jar.NestedJarFile.getInputStream(NestedJarFile.java:347)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection$ConnectionInputStream.getDelegateInputStream(JarUrlConnection.java:393)",
+              "org.springframework.boot.loader.net.protocol.jar.LazyDelegatingInputStream.in(LazyDelegatingInputStream.java:87)",
+              "org.springframework.boot.loader.net.protocol.jar.LazyDelegatingInputStream.read(LazyDelegatingInputStream.java:43)",
+              "java.base\/jdk.internal.loader.Resource.getBytes(Resource.java:106)",
+              "java.base\/java.net.URLClassLoader.defineClass(URLClassLoader.java:449)",
+              "java.base\/java.net.URLClassLoader.findClass(URLClassLoader.java:367)",
+              "java.base\/java.lang.ClassLoader.loadClass(ClassLoader.java:557)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.loadClass(JarUrlClassLoader.java:107)",
+              "org.springframework.boot.loader.launch.LaunchedClassLoader.loadClass(LaunchedClassLoader.java:91)",
+              "java.base\/java.lang.ClassLoader.loadClass(ClassLoader.java:490)",
+              "org.apache.tomcat.websocket.server.WsSci.init(WsSci.java:136)",
+              "org.apache.tomcat.websocket.server.WsSci.onStartup(WsSci.java:50)",
+              "org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4573)",
+              "org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)",
+              "org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204)",
+              "org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200)",
+              "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:328)",
+              "org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92)",
+              "java.base\/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)",
+              "org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732)",
+              "org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)",
+              "org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)",
+              "org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204)",
+              "org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200)",
+              "java.base\/java.util.concurrent.FutureTask.run(FutureTask.java:328)",
+              "org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92)",
+              "java.base\/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)",
+              "org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732)",
+              "org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)",
+              "org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)",
+              "org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)",
+              "org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)",
+              "org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:871)",
+              "org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)",
+              "org.apache.catalina.startup.Tomcat.start(Tomcat.java:452)",
+              "org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131)",
+              "org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110)",
+              "org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:429)",
+              "org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:167)",
+              "org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190)",
+              "org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)",
+              "org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)",
+              "org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)",
+              "org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)",
+              "org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)",
+              "org.springframework.boot.SpringApplication.run(SpringApplication.java:321)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedjarfileReproduceApplication.main(NestedjarfileReproduceApplication.java:33)",
+              "java.base\/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)",
+              "java.base\/java.lang.reflect.Method.invoke(Method.java:565)",
+              "org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)",
+              "org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)",
+              "org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 8,
+                "locks": [
+                  "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile@7b3300e5"
+                ]
+              },
+              {
+                "depth": 11,
+                "locks": [
+                  "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection$ConnectionInputStream@28f9fa66"
+                ]
+              },
+              {
+                "depth": 16,
+                "locks": [
+                  "java.lang.Object@5deb9efc"
+                ]
+              },
+              {
+                "depth": 23,
+                "locks": [
+                  "org.springframework.boot.tomcat.TomcatEmbeddedContext@5d49e8e0"
+                ]
+              },
+              {
+                "depth": 31,
+                "locks": [
+                  "org.apache.catalina.core.StandardHost@4c74f328"
+                ]
+              },
+              {
+                "depth": 39,
+                "locks": [
+                  "org.apache.catalina.core.StandardEngine@2b390a0a"
+                ]
+              },
+              {
+                "depth": 41,
+                "locks": [
+                  "org.apache.catalina.core.StandardService@2aa47def"
+                ]
+              },
+              {
+                "depth": 43,
+                "locks": [
+                  "org.apache.catalina.core.StandardServer@38389eb3"
+                ]
+              },
+              {
+                "depth": 45,
+                "locks": [
+                  "java.lang.Object@53bed72f"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "12",
+            "time": "2026-09-11T21:01:25.006786Z",
+            "name": "Reference Handler",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/java.lang.ref.Reference.waitForReferencePendingList(Native Method)",
+              "java.base\/java.lang.ref.Reference.processPendingReferences(Reference.java:246)",
+              "java.base\/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)"
+            ]
+          },
+          {
+            "tid": "13",
+            "time": "2026-09-11T21:01:25.006815Z",
+            "name": "Finalizer",
+            "state": "WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@463eb466",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.Object.wait(Object.java:351)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:137)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)",
+              "java.base\/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:165)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 4,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@463eb466"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "14",
+            "time": "2026-09-11T21:01:25.006860Z",
+            "name": "Signal Dispatcher",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "19",
+            "time": "2026-09-11T21:01:25.006873Z",
+            "name": "Notification Thread",
+            "state": "RUNNABLE",
+            "stack": [
+            ]
+          },
+          {
+            "tid": "20",
+            "time": "2026-09-11T21:01:25.006884Z",
+            "name": "Common-Cleaner",
+            "state": "TIMED_WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@2ecde7a7",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)",
+              "java.base\/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:146)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 3,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@2ecde7a7"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "21",
+            "time": "2026-09-11T21:01:25.006923Z",
+            "name": "Cleaner-0",
+            "state": "TIMED_WAITING",
+            "waitingOn": "java.lang.ref.ReferenceQueue$Lock@5ba34f89",
+            "stack": [
+              "java.base\/java.lang.Object.wait0(Native Method)",
+              "java.base\/java.lang.Object.wait(Object.java:389)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)",
+              "java.base\/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)",
+              "java.base\/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:146)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ],
+            "monitorsOwned": [
+              {
+                "depth": 3,
+                "locks": [
+                  "java.lang.ref.ReferenceQueue$Lock@5ba34f89"
+                ]
+              }
+            ]
+          },
+          {
+            "tid": "27",
+            "time": "2026-09-11T21:01:25.006958Z",
+            "name": "VirtualThread-unblocker",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/java.lang.VirtualThread.takeVirtualThreadListToUnblock(Native Method)",
+              "java.base\/java.lang.VirtualThread.unblockVirtualThreads(VirtualThread.java:1519)",
+              "java.base\/java.lang.Thread.run(Thread.java:1474)",
+              "java.base\/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:148)"
+            ]
+          },
+          {
+            "tid": "36",
+            "time": "2026-09-11T21:01:25.006982Z",
+            "name": "Attach Listener",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.ThreadSnapshot.create(Native Method)",
+              "java.base\/jdk.internal.vm.ThreadSnapshot.of(ThreadSnapshot.java:62)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThread(ThreadDumper.java:319)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreads(ThreadDumper.java:294)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToJson(ThreadDumper.java:269)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToFile(ThreadDumper.java:131)",
+              "java.base\/jdk.internal.vm.ThreadDumper.dumpThreadsToJson(ThreadDumper.java:89)"
+            ]
+          }
+        ],
+        "threadCount": "9"
+      },
+      {
+        "container": "ForkJoinPool.commonPool\/jdk.internal.vm.SharedThreadContainer@18e96b56",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+        ],
+        "threadCount": "0"
+      },
+      {
+        "container": "java.util.concurrent.ThreadPoolExecutor@6aaceffd",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+        ],
+        "threadCount": "0"
+      },
+      {
+        "container": "java.util.concurrent.ScheduledThreadPoolExecutor@290d10ef",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+        ],
+        "threadCount": "0"
+      },
+      {
+        "container": "java.util.concurrent.ThreadPerTaskExecutor@2f9ea657",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+          {
+            "tid": "33",
+            "time": "2026-09-11T21:01:25.007098Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "org.springframework.boot.loader.zip.FileDataBlock$FileAccess.ensureOpen(FileDataBlock.java:282)",
+              "org.springframework.boot.loader.zip.FileDataBlock.ensureOpen(FileDataBlock.java:117)",
+              "org.springframework.boot.loader.zip.FileDataBlock.read(FileDataBlock.java:73)",
+              "org.springframework.boot.loader.zip.DataBlock.readFully(DataBlock.java:64)",
+              "org.springframework.boot.loader.zip.ZipString.readString(ZipString.java:268)",
+              "org.springframework.boot.loader.zip.ZipContent$Entry.getName(ZipContent.java:795)",
+              "org.springframework.boot.loader.jar.NestedJarFile$NestedJarEntry.<init>(NestedJarFile.java:449)",
+              "org.springframework.boot.loader.jar.NestedJarFile.getNestedJarEntry(NestedJarFile.java:268)",
+              "org.springframework.boot.loader.jar.NestedJarFile.getEntry(NestedJarFile.java:234)",
+              "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile.getEntry(UrlNestedJarFile.java:54)",
+              "org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile.getEntry(UrlNestedJarFile.java:34)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlConnection.getInputStream(JarUrlConnection.java:190)",
+              "java.base\/jdk.internal.loader.URLClassPath$Loader.findResource(URLClassPath.java:534)",
+              "java.base\/jdk.internal.loader.URLClassPath.findResource(URLClassPath.java:268)",
+              "java.base\/java.net.URLClassLoader.findResource(URLClassLoader.java:550)",
+              "org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.findResource(JarUrlClassLoader.java:73)",
+              "java.base\/java.lang.ClassLoader.getResource(ClassLoader.java:1349)",
+              "java.base\/java.net.URLClassLoader.getResourceAsStream(URLClassLoader.java:244)",
+              "org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:206)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.drain(NestedJarFileContentionInitializer.java:107)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$scan$0(NestedJarFileContentionInitializer.java:81)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)",
+              "java.base\/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)",
+              "java.base\/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)",
+              "java.base\/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)",
+              "java.base\/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)",
+              "java.base\/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)",
+              "java.base\/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:80)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ]
+          },
+          {
+            "tid": "34",
+            "time": "2026-09-11T21:01:25.007303Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.busySpin(NestedJarFileContentionInitializer.java:91)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$scan$0(NestedJarFileContentionInitializer.java:82)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)",
+              "java.base\/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)",
+              "java.base\/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)",
+              "java.base\/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)",
+              "java.base\/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)",
+              "java.base\/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)",
+              "java.base\/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:80)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "carrier": "31"
+          },
+          {
+            "tid": "28",
+            "time": "2026-09-11T21:01:25.007665Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.busySpin(NestedJarFileContentionInitializer.java:91)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$scan$0(NestedJarFileContentionInitializer.java:82)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)",
+              "java.base\/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)",
+              "java.base\/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)",
+              "java.base\/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)",
+              "java.base\/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)",
+              "java.base\/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)",
+              "java.base\/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:80)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "carrier": "29"
+          },
+          {
+            "tid": "30",
+            "time": "2026-09-11T21:01:25.008001Z",
+            "virtual": true,
+            "name": "",
+            "state": "RUNNABLE",
+            "stack": [
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.busySpin(NestedJarFileContentionInitializer.java:91)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$scan$0(NestedJarFileContentionInitializer.java:82)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)",
+              "java.base\/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)",
+              "java.base\/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)",
+              "java.base\/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)",
+              "java.base\/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)",
+              "java.base\/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)",
+              "java.base\/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)",
+              "java.base\/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.scan(NestedJarFileContentionInitializer.java:80)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$2(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.lang.Iterable.forEach(Iterable.java:75)",
+              "com.github.icikle.nestedjarfile_reproduce.NestedJarFileContentionInitializer.lambda$initialize$1(NestedJarFileContentionInitializer.java:45)",
+              "java.base\/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291)",
+              "java.base\/java.lang.VirtualThread.run(VirtualThread.java:460)"
+            ],
+            "carrier": "32"
+          }
+        ],
+        "threadCount": "4"
+      },
+      {
+        "container": "ForkJoinPool-1\/jdk.internal.vm.SharedThreadContainer@1a0195f3",
+        "parent": "<root>",
+        "owner": null,
+        "threads": [
+          {
+            "tid": "29",
+            "time": "2026-09-11T21:01:25.008358Z",
+            "name": "ForkJoinPool-1-worker-1",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:254)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          },
+          {
+            "tid": "31",
+            "time": "2026-09-11T21:01:25.008452Z",
+            "name": "ForkJoinPool-1-worker-2",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:254)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          },
+          {
+            "tid": "32",
+            "time": "2026-09-11T21:01:25.008508Z",
+            "name": "ForkJoinPool-1-worker-3",
+            "state": "RUNNABLE",
+            "stack": [
+              "java.base\/jdk.internal.vm.Continuation.run(Continuation.java:254)",
+              "java.base\/java.lang.VirtualThread.runContinuation(VirtualThread.java:297)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1753)",
+              "java.base\/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1745)",
+              "java.base\/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1662)",
+              "java.base\/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)",
+              "java.base\/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)",
+              "java.base\/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)",
+              "java.base\/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)"
+            ]
+          }
+        ],
+        "threadCount": "3"
+      }
+    ]
+  }
+}

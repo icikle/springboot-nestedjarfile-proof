@@ -1,0 +1,22 @@
+{
+  "id": 12,
+  "name": "Resource 12",
+  "description": "",
+  "data": [
+    {"key_1": "value_3144"},
+    {"key_2": "value_4052"},
+    {"key_3": "value_4961"},
+    {"key_4": "value_5870"},
+    {"key_5": "value_6778"},
+    {"key_6": "value_7687"},
+    {"key_7": "value_8595"},
+    {"key_8": "value_9504"},
+    {"key_9": "value_10413"},
+    {"key_10": "value_11321"},
+    {"key_11": "value_12230"},
+    {"key_12": "value_13139"},
+    {"key_13": "value_14047"}
+  ],
+  "timestamp": "2026-09-10T20:13:14Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

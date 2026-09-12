@@ -1,0 +1,18 @@
+{
+  "id": 75,
+  "name": "Resource 75",
+  "description": "",
+  "data": [
+    {"key_1": "value_1221"},
+    {"key_2": "value_2130"},
+    {"key_3": "value_3039"},
+    {"key_4": "value_3947"},
+    {"key_5": "value_4856"},
+    {"key_6": "value_5765"},
+    {"key_7": "value_6673"},
+    {"key_8": "value_24420"},
+    {"key_9": "value_25329"}
+  ],
+  "timestamp": "2026-09-10T20:13:28Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. K"
+}

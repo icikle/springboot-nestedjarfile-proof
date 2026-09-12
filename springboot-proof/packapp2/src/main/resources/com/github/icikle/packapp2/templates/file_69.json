@@ -1,0 +1,19 @@
+{
+  "id": 69,
+  "name": "Resource 69",
+  "description": "",
+  "data": [
+    {"key_1": "value_31764"},
+    {"key_2": "value_32673"},
+    {"key_3": "value_813"},
+    {"key_4": "value_1722"},
+    {"key_5": "value_2630"},
+    {"key_6": "value_3539"},
+    {"key_7": "value_4448"},
+    {"key_8": "value_5356"},
+    {"key_9": "value_6265"},
+    {"key_10": "value_7174"}
+  ],
+  "timestamp": "2026-09-10T20:13:28Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

@@ -1,0 +1,27 @@
+{
+  "id": 27,
+  "name": "Resource 27",
+  "description": "EL",
+  "data": [
+    {"key_1": "value_24904"},
+    {"key_2": "value_25813"},
+    {"key_3": "value_26722"},
+    {"key_4": "value_27630"},
+    {"key_5": "value_28539"},
+    {"key_6": "value_29447"},
+    {"key_7": "value_30356"},
+    {"key_8": "value_31265"},
+    {"key_9": "value_32173"},
+    {"key_10": "value_314"},
+    {"key_11": "value_1222"},
+    {"key_12": "value_2131"},
+    {"key_13": "value_3040"},
+    {"key_14": "value_3948"},
+    {"key_15": "value_4857"},
+    {"key_16": "value_5766"},
+    {"key_17": "value_6674"},
+    {"key_18": "value_7583"}
+  ],
+  "timestamp": "2026-09-10T20:13:47Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

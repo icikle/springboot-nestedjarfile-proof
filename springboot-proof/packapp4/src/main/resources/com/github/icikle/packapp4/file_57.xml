@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="57" name="Resource_57">
+  <metadata>
+    <created>2026-09-10T20:13:49Z</created>
+    <size>2679</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_3666</value></item>
+    <item id="2"><value>Random_Data_20504</value></item>
+    <item id="3"><value>Random_Data_4575</value></item>
+    <item id="4"><value>Random_Data_21413</value></item>
+    <item id="5"><value>Random_Data_5483</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </content>
+</resource>

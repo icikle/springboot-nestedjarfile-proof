@@ -1,0 +1,24 @@
+{
+  "id": 124,
+  "name": "Resource 124",
+  "description": " ",
+  "data": [
+    {"key_1": "value_17680"},
+    {"key_2": "value_18589"},
+    {"key_3": "value_19497"},
+    {"key_4": "value_20406"},
+    {"key_5": "value_21314"},
+    {"key_6": "value_22223"},
+    {"key_7": "value_23132"},
+    {"key_8": "value_24040"},
+    {"key_9": "value_24949"},
+    {"key_10": "value_25858"},
+    {"key_11": "value_26766"},
+    {"key_12": "value_27675"},
+    {"key_13": "value_28583"},
+    {"key_14": "value_29492"},
+    {"key_15": "value_30401"}
+  ],
+  "timestamp": "2026-09-10T20:13:31Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

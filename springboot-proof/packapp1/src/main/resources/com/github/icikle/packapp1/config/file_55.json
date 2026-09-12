@@ -1,0 +1,19 @@
+{
+  "id": 55,
+  "name": "Resource 55",
+  "description": "",
+  "data": [
+    {"key_1": "value_5196"},
+    {"key_2": "value_6105"},
+    {"key_3": "value_7013"},
+    {"key_4": "value_7922"},
+    {"key_5": "value_8831"},
+    {"key_6": "value_9739"},
+    {"key_7": "value_10648"},
+    {"key_8": "value_11556"},
+    {"key_9": "value_12465"},
+    {"key_10": "value_13374"}
+  ],
+  "timestamp": "2026-09-10T20:13:23Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

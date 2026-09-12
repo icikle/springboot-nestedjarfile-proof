@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="106" name="Resource_106">
+  <metadata>
+    <created>2026-09-10T20:13:30Z</created>
+    <size>5263</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_27934</value></item>
+    <item id="2"><value>Random_Data_12004</value></item>
+    <item id="3"><value>Random_Data_28843</value></item>
+    <item id="4"><value>Random_Data_12913</value></item>
+    <item id="5"><value>Random_Data_29751</value></item>
+    <item id="6"><value>Random_Data_13822</value></item>
+    <item id="7"><value>Random_Data_14730</value></item>
+    <item id="8"><value>Random_Data_31569</value></item>
+    <item id="9"><value>Random_Data_15639</value></item>
+    <item id="10"><value>Random_Data_32477</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </content>
+</resource>

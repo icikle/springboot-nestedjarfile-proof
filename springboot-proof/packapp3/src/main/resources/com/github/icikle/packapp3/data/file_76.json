@@ -1,0 +1,26 @@
+{
+  "id": 76,
+  "name": "Resource 76",
+  "description": "",
+  "data": [
+    {"key_1": "value_17889"},
+    {"key_2": "value_18798"},
+    {"key_3": "value_19706"},
+    {"key_4": "value_20615"},
+    {"key_5": "value_21524"},
+    {"key_6": "value_22432"},
+    {"key_7": "value_23341"},
+    {"key_8": "value_24249"},
+    {"key_9": "value_25158"},
+    {"key_10": "value_26067"},
+    {"key_11": "value_26975"},
+    {"key_12": "value_27884"},
+    {"key_13": "value_28793"},
+    {"key_14": "value_29701"},
+    {"key_15": "value_30610"},
+    {"key_16": "value_31518"},
+    {"key_17": "value_32427"}
+  ],
+  "timestamp": "2026-09-10T20:13:37Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

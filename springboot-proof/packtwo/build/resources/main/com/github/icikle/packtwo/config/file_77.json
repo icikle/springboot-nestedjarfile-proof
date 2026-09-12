@@ -1,0 +1,28 @@
+{
+  "id": 77,
+  "name": "Resource 77",
+  "description": "",
+  "data": [
+    {"key_1": "value_26341"},
+    {"key_2": "value_27250"},
+    {"key_3": "value_28158"},
+    {"key_4": "value_29067"},
+    {"key_5": "value_29976"},
+    {"key_6": "value_30884"},
+    {"key_7": "value_31793"},
+    {"key_8": "value_32701"},
+    {"key_9": "value_842"},
+    {"key_10": "value_1751"},
+    {"key_11": "value_2659"},
+    {"key_12": "value_3568"},
+    {"key_13": "value_4477"},
+    {"key_14": "value_5385"},
+    {"key_15": "value_6294"},
+    {"key_16": "value_7202"},
+    {"key_17": "value_8111"},
+    {"key_18": "value_9020"},
+    {"key_19": "value_9928"}
+  ],
+  "timestamp": "2026-09-10T20:13:18Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

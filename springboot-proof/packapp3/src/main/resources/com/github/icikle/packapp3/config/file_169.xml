@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="169" name="Resource_169">
+  <metadata>
+    <created>2026-09-10T20:13:43Z</created>
+    <size>2819</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_23209</value></item>
+    <item id="2"><value>Random_Data_7280</value></item>
+    <item id="3"><value>Random_Data_24118</value></item>
+    <item id="4"><value>Random_Data_8188</value></item>
+    <item id="5"><value>Random_Data_25027</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. G</content>
+</resource>

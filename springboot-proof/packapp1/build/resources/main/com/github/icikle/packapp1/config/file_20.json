@@ -1,0 +1,28 @@
+{
+  "id": 20,
+  "name": "Resource 20",
+  "description": "z",
+  "data": [
+    {"key_1": "value_25094"},
+    {"key_2": "value_26002"},
+    {"key_3": "value_26911"},
+    {"key_4": "value_27819"},
+    {"key_5": "value_28728"},
+    {"key_6": "value_29637"},
+    {"key_7": "value_30545"},
+    {"key_8": "value_31454"},
+    {"key_9": "value_32363"},
+    {"key_10": "value_503"},
+    {"key_11": "value_1412"},
+    {"key_12": "value_2320"},
+    {"key_13": "value_3229"},
+    {"key_14": "value_4138"},
+    {"key_15": "value_5046"},
+    {"key_16": "value_5955"},
+    {"key_17": "value_6863"},
+    {"key_18": "value_7772"},
+    {"key_19": "value_8681"}
+  ],
+  "timestamp": "2026-09-10T20:13:20Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

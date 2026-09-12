@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="42" name="Resource_42">
+  <metadata>
+    <created>2026-09-10T20:13:48Z</created>
+    <size>19021</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_1945</value></item>
+    <item id="2"><value>Random_Data_2854</value></item>
+    <item id="3"><value>Random_Data_3762</value></item>
+    <item id="4"><value>Random_Data_4671</value></item>
+    <item id="5"><value>Random_Data_21509</value></item>
+    <item id="6"><value>Random_Data_5580</value></item>
+    <item id="7"><value>Random_Data_22418</value></item>
+    <item id="8"><value>Random_Data_6488</value></item>
+    <item id="9"><value>Random_Data_23327</value></item>
+    <item id="10"><value>Random_Data_7397</value></item>
+    <item id="11"><value>Random_Data_24235</value></item>
+    <item id="12"><value>Random_Data_8305</value></item>
+    <item id="13"><value>Random_Data_25144</value></item>
+    <item id="14"><value>Random_Data_9214</value></item>
+    <item id="15"><value>Random_Data_26052</value></item>
+    <item id="16"><value>Random_Data_10123</value></item>
+    <item id="17"><value>Random_Data_26961</value></item>
+    <item id="18"><value>Random_Data_11031</value></item>
+    <item id="19"><value>Random_Data_27870</value></item>
+    <item id="20"><value>Random_Data_11940</value></item>
+    <item id="21"><value>Random_Data_28778</value></item>
+    <item id="22"><value>Random_Data_12849</value></item>
+    <item id="23"><value>Random_Data_29687</value></item>
+    <item id="24"><value>Random_Data_13757</value></item>
+    <item id="25"><value>Random_Data_30595</value></item>
+    <item id="26"><value>Random_Data_14666</value></item>
+    <item id="27"><value>Random_Data_31504</value></item>
+    <item id="28"><value>Random_Data_15574</value></item>
+    <item id="29"><value>Random_Data_32413</value></item>
+    <item id="30"><value>Random_Data_16483</value></item>
+    <item id="31"><value>Random_Data_553</value></item>
+    <item id="32"><value>Random_Data_17392</value></item>
+    <item id="33"><value>Random_Data_1462</value></item>
+    <item id="34"><value>Random_Data_18300</value></item>
+    <item id="35"><value>Random_Data_2371</value></item>
+    <item id="36"><value>Random_Data_19209</value></item>
+    <item id="37"><value>Random_Data_3279</value></item>
+    <item id="38"><value>Random_Data_20117</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </content>
+</resource>

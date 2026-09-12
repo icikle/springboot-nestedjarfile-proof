@@ -1,0 +1,31 @@
+{
+  "id": 83,
+  "name": "Resource 83",
+  "description": "",
+  "data": [
+    {"key_1": "value_10420"},
+    {"key_2": "value_11329"},
+    {"key_3": "value_12238"},
+    {"key_4": "value_13146"},
+    {"key_5": "value_14055"},
+    {"key_6": "value_14963"},
+    {"key_7": "value_15872"},
+    {"key_8": "value_16781"},
+    {"key_9": "value_17689"},
+    {"key_10": "value_18598"},
+    {"key_11": "value_19506"},
+    {"key_12": "value_20415"},
+    {"key_13": "value_21324"},
+    {"key_14": "value_22232"},
+    {"key_15": "value_23141"},
+    {"key_16": "value_24049"},
+    {"key_17": "value_24958"},
+    {"key_18": "value_25867"},
+    {"key_19": "value_26775"},
+    {"key_20": "value_27684"},
+    {"key_21": "value_28593"},
+    {"key_22": "value_29501"}
+  ],
+  "timestamp": "2026-09-10T20:13:18Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

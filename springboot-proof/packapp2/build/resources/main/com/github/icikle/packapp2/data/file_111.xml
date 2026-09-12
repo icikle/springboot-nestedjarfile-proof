@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="111" name="Resource_111">
+  <metadata>
+    <created>2026-09-10T20:13:30Z</created>
+    <size>886</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_13002</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </content>
+</resource>

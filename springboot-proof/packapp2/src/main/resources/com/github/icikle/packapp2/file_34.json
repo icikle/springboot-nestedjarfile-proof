@@ -1,0 +1,25 @@
+{
+  "id": 34,
+  "name": "Resource 34",
+  "description": "kR",
+  "data": [
+    {"key_1": "value_6567"},
+    {"key_2": "value_7475"},
+    {"key_3": "value_8384"},
+    {"key_4": "value_9292"},
+    {"key_5": "value_10201"},
+    {"key_6": "value_11110"},
+    {"key_7": "value_12018"},
+    {"key_8": "value_12927"},
+    {"key_9": "value_13835"},
+    {"key_10": "value_14744"},
+    {"key_11": "value_15653"},
+    {"key_12": "value_16561"},
+    {"key_13": "value_17470"},
+    {"key_14": "value_18379"},
+    {"key_15": "value_19287"},
+    {"key_16": "value_20196"}
+  ],
+  "timestamp": "2026-09-10T20:13:25Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. iJ"
+}

@@ -1,0 +1,14 @@
+{
+  "id": 43,
+  "name": "Resource 43",
+  "description": "4w",
+  "data": [
+    {"key_1": "value_7086"},
+    {"key_2": "value_7994"},
+    {"key_3": "value_8903"},
+    {"key_4": "value_9812"},
+    {"key_5": "value_10720"}
+  ],
+  "timestamp": "2026-09-10T20:13:34Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

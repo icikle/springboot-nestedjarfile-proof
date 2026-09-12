@@ -1,0 +1,16 @@
+{
+  "id": 104,
+  "name": "Resource 104",
+  "description": "I",
+  "data": [
+    {"key_1": "value_6488"},
+    {"key_2": "value_7397"},
+    {"key_3": "value_8305"},
+    {"key_4": "value_9214"},
+    {"key_5": "value_10122"},
+    {"key_6": "value_11031"},
+    {"key_7": "value_11940"}
+  ],
+  "timestamp": "2026-09-10T20:13:52Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

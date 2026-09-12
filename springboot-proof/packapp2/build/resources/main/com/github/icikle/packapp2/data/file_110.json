@@ -1,0 +1,24 @@
+{
+  "id": 110,
+  "name": "Resource 110",
+  "description": "",
+  "data": [
+    {"key_1": "value_19150"},
+    {"key_2": "value_20059"},
+    {"key_3": "value_20968"},
+    {"key_4": "value_5946"},
+    {"key_5": "value_6855"},
+    {"key_6": "value_7764"},
+    {"key_7": "value_8672"},
+    {"key_8": "value_9581"},
+    {"key_9": "value_10490"},
+    {"key_10": "value_11398"},
+    {"key_11": "value_12307"},
+    {"key_12": "value_13215"},
+    {"key_13": "value_14124"},
+    {"key_14": "value_15033"},
+    {"key_15": "value_15941"}
+  ],
+  "timestamp": "2026-09-10T20:13:30Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

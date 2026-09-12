@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="92" name="Resource_92">
+  <metadata>
+    <created>2026-09-10T20:13:52Z</created>
+    <size>2081</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_13283</value></item>
+    <item id="2"><value>Random_Data_30121</value></item>
+    <item id="3"><value>Random_Data_14192</value></item>
+    <item id="4"><value>Random_Data_31030</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. e</content>
+</resource>

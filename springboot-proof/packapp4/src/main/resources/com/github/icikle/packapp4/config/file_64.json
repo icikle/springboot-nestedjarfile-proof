@@ -1,0 +1,11 @@
+{
+  "id": 64,
+  "name": "Resource 64",
+  "description": "",
+  "data": [
+    {"key_1": "value_8339"},
+    {"key_2": "value_9248"}
+  ],
+  "timestamp": "2026-09-10T20:13:50Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

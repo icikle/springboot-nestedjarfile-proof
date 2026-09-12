@@ -1,0 +1,17 @@
+{
+  "id": 63,
+  "name": "Resource 63",
+  "description": "",
+  "data": [
+    {"key_1": "value_7688"},
+    {"key_2": "value_8597"},
+    {"key_3": "value_9505"},
+    {"key_4": "value_10414"},
+    {"key_5": "value_11323"},
+    {"key_6": "value_12231"},
+    {"key_7": "value_13140"},
+    {"key_8": "value_14048"}
+  ],
+  "timestamp": "2026-09-10T20:13:23Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

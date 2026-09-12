@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="71" name="Resource_71">
+  <metadata>
+    <created>2026-09-10T20:13:28Z</created>
+    <size>2092</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_3496</value></item>
+    <item id="2"><value>Random_Data_20334</value></item>
+    <item id="3"><value>Random_Data_4405</value></item>
+    <item id="4"><value>Random_Data_21243</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </content>
+</resource>

@@ -1,0 +1,18 @@
+{
+  "id": 154,
+  "name": "Resource 154",
+  "description": "",
+  "data": [
+    {"key_1": "value_29214"},
+    {"key_2": "value_30122"},
+    {"key_3": "value_31031"},
+    {"key_4": "value_31940"},
+    {"key_5": "value_80"},
+    {"key_6": "value_989"},
+    {"key_7": "value_1897"},
+    {"key_8": "value_2806"},
+    {"key_9": "value_3715"}
+  ],
+  "timestamp": "2026-09-10T20:13:42Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

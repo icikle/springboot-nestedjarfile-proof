@@ -1,0 +1,20 @@
+{
+  "id": 24,
+  "name": "Resource 24",
+  "description": "b",
+  "data": [
+    {"key_1": "value_27803"},
+    {"key_2": "value_28712"},
+    {"key_3": "value_29620"},
+    {"key_4": "value_30529"},
+    {"key_5": "value_31438"},
+    {"key_6": "value_32346"},
+    {"key_7": "value_487"},
+    {"key_8": "value_18234"},
+    {"key_9": "value_19142"},
+    {"key_10": "value_20051"},
+    {"key_11": "value_20960"}
+  ],
+  "timestamp": "2026-09-10T20:13:25Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

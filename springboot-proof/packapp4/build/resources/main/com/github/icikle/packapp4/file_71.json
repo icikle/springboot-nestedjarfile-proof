@@ -1,0 +1,16 @@
+{
+  "id": 71,
+  "name": "Resource 71",
+  "description": "L",
+  "data": [
+    {"key_1": "value_21217"},
+    {"key_2": "value_22125"},
+    {"key_3": "value_23034"},
+    {"key_4": "value_23942"},
+    {"key_5": "value_24851"},
+    {"key_6": "value_25760"},
+    {"key_7": "value_26668"}
+  ],
+  "timestamp": "2026-09-10T20:13:50Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

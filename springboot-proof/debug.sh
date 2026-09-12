@@ -1,0 +1,1 @@
+ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005 -Dloader.path=loader-lib -Dloader.main=com.github.icikle.nestedjarfile_reproduce.NestedjarfileReproduceApplication -jar build/libs/nestedjarfile-reproduce-0.0.1-SNAPSHOT.jar org.springframework.boot.loader.launch.PropertiesLauncher

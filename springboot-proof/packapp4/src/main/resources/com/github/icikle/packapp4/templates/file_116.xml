@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="116" name="Resource_116">
+  <metadata>
+    <created>2026-09-10T20:13:54Z</created>
+    <size>3049</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_27279</value></item>
+    <item id="2"><value>Random_Data_11349</value></item>
+    <item id="3"><value>Random_Data_28187</value></item>
+    <item id="4"><value>Random_Data_12258</value></item>
+    <item id="5"><value>Random_Data_29096</value></item>
+    <item id="6"><value>Random_Data_13166</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. WO.p</content>
+</resource>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="45" name="Resource_45">
+  <metadata>
+    <created>2026-09-10T20:13:48Z</created>
+    <size>1216</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_17603</value></item>
+    <item id="2"><value>Random_Data_1674</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </content>
+</resource>

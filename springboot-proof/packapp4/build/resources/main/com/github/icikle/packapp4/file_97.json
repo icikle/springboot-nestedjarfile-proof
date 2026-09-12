@@ -1,0 +1,28 @@
+{
+  "id": 97,
+  "name": "Resource 97",
+  "description": "",
+  "data": [
+    {"key_1": "value_29504"},
+    {"key_2": "value_30413"},
+    {"key_3": "value_31321"},
+    {"key_4": "value_32230"},
+    {"key_5": "value_370"},
+    {"key_6": "value_1279"},
+    {"key_7": "value_2188"},
+    {"key_8": "value_3096"},
+    {"key_9": "value_4005"},
+    {"key_10": "value_4913"},
+    {"key_11": "value_5822"},
+    {"key_12": "value_6731"},
+    {"key_13": "value_7639"},
+    {"key_14": "value_8548"},
+    {"key_15": "value_9456"},
+    {"key_16": "value_10365"},
+    {"key_17": "value_11274"},
+    {"key_18": "value_12182"},
+    {"key_19": "value_13091"}
+  ],
+  "timestamp": "2026-09-10T20:13:52Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

@@ -1,0 +1,18 @@
+{
+  "id": 22,
+  "name": "Resource 22",
+  "description": "4",
+  "data": [
+    {"key_1": "value_7465"},
+    {"key_2": "value_8374"},
+    {"key_3": "value_9283"},
+    {"key_4": "value_10191"},
+    {"key_5": "value_11100"},
+    {"key_6": "value_12008"},
+    {"key_7": "value_12917"},
+    {"key_8": "value_13826"},
+    {"key_9": "value_14734"}
+  ],
+  "timestamp": "2026-09-10T20:13:14Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 7"
+}

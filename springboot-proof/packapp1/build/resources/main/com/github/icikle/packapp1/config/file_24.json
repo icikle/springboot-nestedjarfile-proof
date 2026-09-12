@@ -1,0 +1,13 @@
+{
+  "id": 24,
+  "name": "Resource 24",
+  "description": "U",
+  "data": [
+    {"key_1": "value_843"},
+    {"key_2": "value_1751"},
+    {"key_3": "value_2660"},
+    {"key_4": "value_3569"}
+  ],
+  "timestamp": "2026-09-10T20:13:21Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

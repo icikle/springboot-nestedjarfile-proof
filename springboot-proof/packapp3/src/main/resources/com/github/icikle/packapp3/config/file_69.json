@@ -1,0 +1,23 @@
+{
+  "id": 69,
+  "name": "Resource 69",
+  "description": "",
+  "data": [
+    {"key_1": "value_11535"},
+    {"key_2": "value_12444"},
+    {"key_3": "value_13352"},
+    {"key_4": "value_14261"},
+    {"key_5": "value_15169"},
+    {"key_6": "value_16078"},
+    {"key_7": "value_16987"},
+    {"key_8": "value_17895"},
+    {"key_9": "value_18804"},
+    {"key_10": "value_19712"},
+    {"key_11": "value_20621"},
+    {"key_12": "value_21530"},
+    {"key_13": "value_22438"},
+    {"key_14": "value_23347"}
+  ],
+  "timestamp": "2026-09-10T20:13:36Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

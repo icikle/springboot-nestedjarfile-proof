@@ -1,0 +1,21 @@
+{
+  "id": 118,
+  "name": "Resource 118",
+  "description": "",
+  "data": [
+    {"key_1": "value_4913"},
+    {"key_2": "value_5822"},
+    {"key_3": "value_6731"},
+    {"key_4": "value_7639"},
+    {"key_5": "value_8548"},
+    {"key_6": "value_9456"},
+    {"key_7": "value_10365"},
+    {"key_8": "value_11274"},
+    {"key_9": "value_12182"},
+    {"key_10": "value_13091"},
+    {"key_11": "value_13999"},
+    {"key_12": "value_14908"}
+  ],
+  "timestamp": "2026-09-10T20:13:40Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. h"
+}

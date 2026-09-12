@@ -1,0 +1,16 @@
+{
+  "id": 10,
+  "name": "Resource 10",
+  "description": "T",
+  "data": [
+    {"key_1": "value_3524"},
+    {"key_2": "value_4432"},
+    {"key_3": "value_5341"},
+    {"key_4": "value_6249"},
+    {"key_5": "value_7158"},
+    {"key_6": "value_8067"},
+    {"key_7": "value_8975"}
+  ],
+  "timestamp": "2026-09-10T20:13:24Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

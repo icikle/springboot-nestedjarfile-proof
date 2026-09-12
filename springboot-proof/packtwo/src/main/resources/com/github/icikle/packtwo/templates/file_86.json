@@ -1,0 +1,13 @@
+{
+  "id": 86,
+  "name": "Resource 86",
+  "description": "x",
+  "data": [
+    {"key_1": "value_10886"},
+    {"key_2": "value_11795"},
+    {"key_3": "value_12703"},
+    {"key_4": "value_13612"}
+  ],
+  "timestamp": "2026-09-10T20:13:18Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

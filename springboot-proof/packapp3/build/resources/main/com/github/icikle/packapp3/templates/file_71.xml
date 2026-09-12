@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="71" name="Resource_71">
+  <metadata>
+    <created>2026-09-10T20:13:36Z</created>
+    <size>11402</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_18592</value></item>
+    <item id="2"><value>Random_Data_2662</value></item>
+    <item id="3"><value>Random_Data_19500</value></item>
+    <item id="4"><value>Random_Data_3571</value></item>
+    <item id="5"><value>Random_Data_20409</value></item>
+    <item id="6"><value>Random_Data_4479</value></item>
+    <item id="7"><value>Random_Data_21318</value></item>
+    <item id="8"><value>Random_Data_5388</value></item>
+    <item id="9"><value>Random_Data_22226</value></item>
+    <item id="10"><value>Random_Data_6297</value></item>
+    <item id="11"><value>Random_Data_23135</value></item>
+    <item id="12"><value>Random_Data_7205</value></item>
+    <item id="13"><value>Random_Data_24044</value></item>
+    <item id="14"><value>Random_Data_8114</value></item>
+    <item id="15"><value>Random_Data_24952</value></item>
+    <item id="16"><value>Random_Data_9022</value></item>
+    <item id="17"><value>Random_Data_25861</value></item>
+    <item id="18"><value>Random_Data_9931</value></item>
+    <item id="19"><value>Random_Data_26769</value></item>
+    <item id="20"><value>Random_Data_10840</value></item>
+    <item id="21"><value>Random_Data_27678</value></item>
+    <item id="22"><value>Random_Data_11748</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. pU</content>
+</resource>

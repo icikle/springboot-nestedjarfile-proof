@@ -1,0 +1,21 @@
+{
+  "id": 106,
+  "name": "Resource 106",
+  "description": "k",
+  "data": [
+    {"key_1": "value_7497"},
+    {"key_2": "value_8406"},
+    {"key_3": "value_9315"},
+    {"key_4": "value_10223"},
+    {"key_5": "value_11132"},
+    {"key_6": "value_12040"},
+    {"key_7": "value_12949"},
+    {"key_8": "value_13858"},
+    {"key_9": "value_14766"},
+    {"key_10": "value_15675"},
+    {"key_11": "value_16584"},
+    {"key_12": "value_17492"}
+  ],
+  "timestamp": "2026-09-10T20:13:53Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

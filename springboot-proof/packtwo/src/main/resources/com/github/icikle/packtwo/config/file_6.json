@@ -1,0 +1,12 @@
+{
+  "id": 6,
+  "name": "Resource 6",
+  "description": "",
+  "data": [
+    {"key_1": "value_1446"},
+    {"key_2": "value_2355"},
+    {"key_3": "value_3263"}
+  ],
+  "timestamp": "2026-09-10T20:13:13Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

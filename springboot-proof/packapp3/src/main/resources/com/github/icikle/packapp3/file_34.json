@@ -1,0 +1,27 @@
+{
+  "id": 34,
+  "name": "Resource 34",
+  "description": "ePT",
+  "data": [
+    {"key_1": "value_4734"},
+    {"key_2": "value_5642"},
+    {"key_3": "value_6551"},
+    {"key_4": "value_7460"},
+    {"key_5": "value_8368"},
+    {"key_6": "value_9277"},
+    {"key_7": "value_10186"},
+    {"key_8": "value_11094"},
+    {"key_9": "value_12003"},
+    {"key_10": "value_12911"},
+    {"key_11": "value_13820"},
+    {"key_12": "value_14729"},
+    {"key_13": "value_15637"},
+    {"key_14": "value_16546"},
+    {"key_15": "value_17454"},
+    {"key_16": "value_18363"},
+    {"key_17": "value_19272"},
+    {"key_18": "value_20180"}
+  ],
+  "timestamp": "2026-09-10T20:13:34Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

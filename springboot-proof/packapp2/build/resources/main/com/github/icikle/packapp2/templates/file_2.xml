@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource id="2" name="Resource_2">
+  <metadata>
+    <created>2026-09-10T20:13:23Z</created>
+    <size>11769</size>
+  </metadata>
+  <items>
+    <item id="1"><value>Random_Data_12485</value></item>
+    <item id="2"><value>Random_Data_29323</value></item>
+    <item id="3"><value>Random_Data_13394</value></item>
+    <item id="4"><value>Random_Data_30232</value></item>
+    <item id="5"><value>Random_Data_14302</value></item>
+    <item id="6"><value>Random_Data_31141</value></item>
+    <item id="7"><value>Random_Data_15211</value></item>
+    <item id="8"><value>Random_Data_32049</value></item>
+    <item id="9"><value>Random_Data_16120</value></item>
+    <item id="10"><value>Random_Data_190</value></item>
+    <item id="11"><value>Random_Data_17028</value></item>
+    <item id="12"><value>Random_Data_1099</value></item>
+    <item id="13"><value>Random_Data_17937</value></item>
+    <item id="14"><value>Random_Data_2007</value></item>
+    <item id="15"><value>Random_Data_18845</value></item>
+    <item id="16"><value>Random_Data_2916</value></item>
+    <item id="17"><value>Random_Data_19754</value></item>
+    <item id="18"><value>Random_Data_3824</value></item>
+    <item id="19"><value>Random_Data_20663</value></item>
+    <item id="20"><value>Random_Data_4733</value></item>
+    <item id="21"><value>Random_Data_21571</value></item>
+    <item id="22"><value>Random_Data_5642</value></item>
+    <item id="23"><value>Random_Data_22480</value></item>
+  </items>
+  <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </content>
+</resource>

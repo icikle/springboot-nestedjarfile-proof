@@ -1,0 +1,19 @@
+{
+  "id": 66,
+  "name": "Resource 66",
+  "description": "",
+  "data": [
+    {"key_1": "value_24443"},
+    {"key_2": "value_25351"},
+    {"key_3": "value_26260"},
+    {"key_4": "value_27168"},
+    {"key_5": "value_28077"},
+    {"key_6": "value_28986"},
+    {"key_7": "value_29894"},
+    {"key_8": "value_30803"},
+    {"key_9": "value_31711"},
+    {"key_10": "value_32620"}
+  ],
+  "timestamp": "2026-09-10T20:13:17Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

@@ -1,0 +1,12 @@
+{
+  "id": 82,
+  "name": "Resource 82",
+  "description": "3",
+  "data": [
+    {"key_1": "value_13442"},
+    {"key_2": "value_14351"},
+    {"key_3": "value_15259"}
+  ],
+  "timestamp": "2026-09-10T20:13:18Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+}

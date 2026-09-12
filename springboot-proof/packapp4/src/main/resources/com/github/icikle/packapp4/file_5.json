@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "name": "Resource 5",
+  "description": "",
+  "data": [
+    {"key_1": "value_29840"},
+    {"key_2": "value_30748"},
+    {"key_3": "value_31657"},
+    {"key_4": "value_32565"},
+    {"key_5": "value_706"},
+    {"key_6": "value_1615"},
+    {"key_7": "value_2523"},
+    {"key_8": "value_3432"},
+    {"key_9": "value_4340"},
+    {"key_10": "value_5249"},
+    {"key_11": "value_6158"},
+    {"key_12": "value_7066"},
+    {"key_13": "value_7975"},
+    {"key_14": "value_8884"},
+    {"key_15": "value_9792"},
+    {"key_16": "value_10701"}
+  ],
+  "timestamp": "2026-09-10T20:13:45Z",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 4k"
+}
